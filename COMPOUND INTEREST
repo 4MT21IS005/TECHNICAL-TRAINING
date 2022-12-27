@@ -1,0 +1,17 @@
+#include&lt;stdio.h&gt;
+#include&lt;math.h&gt;
+int main ()
+{
+int principle;
+
+float time, rate, compound;
+printf (&quot;principle amount&quot;);
+scanf (&quot;%d&quot;, &amp;principle);
+printf (&quot;rate of intrest&quot;);
+scanf (&quot;%f&quot;, &amp;rate);
+printf (&quot;years :&quot;);
+scanf (&quot;%f&quot;, &amp;time);
+compound=principle*pow(1+rate/100,time)-principle;
+printf (&quot;compound intrest :%f&quot;, compound);
+return 0;
+}
