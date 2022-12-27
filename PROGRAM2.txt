@@ -1,0 +1,25 @@
+2.      #include <stdio.h>
+
+int main()
+{
+    char product_name[20];
+    int quantity;
+    float price,bill_amount,discount=0,net_amount;
+     printf("product name");
+     scanf("%s",product_name);
+     printf("Quantity:");
+     scanf("%d",&quantity);
+     printf("Price:");
+     scanf("%f",&price);
+     
+     bill_amount=quantity*price;
+     
+     if(bill_amount >=5000)
+     discount=bill_amount*15/100;
+     net_amount=bill_amount-discount;
+    
+printf("Bill Amount :10.2f\n",bill_amount);
+printf("Discount(-) :%10.2f\n",discount);
+printf("             ==========\n");
+printf("              :%10.2f\n",net_amount);
+printf("               ===========\n");
